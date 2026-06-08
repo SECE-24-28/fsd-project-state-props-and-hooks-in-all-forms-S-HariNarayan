@@ -1,0 +1,102 @@
+.adminLayout {
+  display: flex;
+  background: var(--bg-primary);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.mainPanel {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--border-glow);
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  color: var(--accent-neon);
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(162, 255, 134, 0.2);
+}
+
+/* User List Table Card */
+.usersSection {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-neon);
+  border: 1px solid var(--border-glow);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background: var(--bg-primary);
+  color: var(--accent-neon);
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--border-glow);
+}
+
+.table td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-glow);
+  color: var(--text-secondary);
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.roleBadge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.role_admin {
+  background: rgba(162, 255, 134, 0.15);
+  color: var(--accent-neon);
+  border-color: rgba(162, 255, 134, 0.3);
+}
+
+.role_customer {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggleBtn {
+  background: none;
+  border: none;
+  color: var(--accent-neon);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.toggleBtn:hover {
+  text-decoration: underline;
+}

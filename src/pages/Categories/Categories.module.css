@@ -1,0 +1,153 @@
+.categoriesWrapper {
+  background: var(--bg-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContent {
+  width: 100%;
+  flex: 1;
+}
+
+/* Hero Section */
+.hero {
+  height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://img.magnific.com/free-photo/variety-organic-vegetables-supermarket_53876-138173.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-glow);
+}
+
+.hero h2 {
+  font-size: 55px;
+  background: rgba(10, 13, 10, 0.85);
+  padding: 20px 45px;
+  border-radius: 15px;
+  margin: 0;
+  text-align: center;
+  border: 1px solid var(--border-glow);
+  color: var(--accent-neon);
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(162, 255, 134, 0.3);
+}
+
+/* Categories Section */
+.categories {
+  padding: 80px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.categories h2 {
+  color: var(--accent-neon);
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.categoryContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categoryCard {
+  width: 280px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-glow);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-neon);
+  transition: 0.3s;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryCard:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-neon);
+  box-shadow: var(--shadow-neon-hover);
+}
+
+.categoryCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-glow);
+}
+
+.categoryContent {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.categoryContent h3 {
+  color: var(--accent-neon);
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.categoryContent p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.shopBtn {
+  padding: 12px 22px;
+  border: none;
+  background: var(--accent-green);
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  align-self: center;
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
+}
+
+.shopBtn:hover {
+  background: var(--accent-neon);
+  box-shadow: 0 6px 15px rgba(162, 255, 134, 0.4);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 200px;
+  }
+  .hero h2 {
+    font-size: 28px;
+    padding: 10px 20px;
+  }
+  .categories {
+    padding: 40px 20px;
+  }
+  .categories h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .categoryCard {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+

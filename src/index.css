@@ -1,0 +1,119 @@
+/* Default/Fallback: Original Light Green Theme */
+:root {
+  --bg-primary: #f5fff5;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+
+  --accent-neon: #2e7d32;
+  --accent-green: #43a047;
+  --accent-dark-green: #1b5e20;
+
+  --text-primary: #333333;
+  --text-secondary: #555555;
+  --text-muted: #777777;
+
+  --border-glow: rgba(0, 0, 0, 0.08);
+  --border-glow-active: #43a047;
+
+  --shadow-neon: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  --shadow-neon-hover: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Theme 1: Original Light Green */
+body[data-theme="original"] {
+  --bg-primary: #f5fff5;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+
+  --accent-neon: #2e7d32;
+  --accent-green: #43a047;
+  --accent-dark-green: #1b5e20;
+
+  --text-primary: #333333;
+  --text-secondary: #555555;
+  --text-muted: #777777;
+
+  --border-glow: rgba(0, 0, 0, 0.08);
+  --border-glow-active: #43a047;
+
+  --shadow-neon: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  --shadow-neon-hover: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Theme 2: Present Dark Neon (Logo Colors) */
+body[data-theme="dark-neon"] {
+  --bg-primary: #0a0d0a;
+  --bg-secondary: #121812;
+  --bg-card: #161e16;
+  --bg-input: #1a221a;
+
+  --accent-neon: #a2ff86;
+  --accent-green: #2ecc71;
+  --accent-dark-green: #1b5e20;
+
+  --text-primary: #ffffff;
+  --text-secondary: #a3b8a3;
+  --text-muted: #6b7c6b;
+
+  --border-glow: rgba(162, 255, 134, 0.2);
+  --border-glow-active: rgba(162, 255, 134, 0.6);
+
+  --shadow-neon: 0 4px 15px rgba(162, 255, 134, 0.1);
+  --shadow-neon-hover: 0 8px 30px rgba(162, 255, 134, 0.3);
+}
+
+/* Theme 3: Modern Light Mode */
+body[data-theme="light-modern"] {
+  --bg-primary: #f9fbf9;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-input: #f0f4f0;
+
+  --accent-neon: #43a047;
+  --accent-green: #2e7d32;
+  --accent-dark-green: #1b5e20;
+
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #888888;
+
+  --border-glow: rgba(0, 0, 0, 0.06);
+  --border-glow-active: #2e7d32;
+
+  --shadow-neon: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-neon-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-card);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green);
+}
